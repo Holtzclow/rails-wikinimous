@@ -1,0 +1,9 @@
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">Wikinimous</a>
+</nav>
+<div class="container">
+<% @articles.each do |article| %>
+    <h4 style="text-align: left;"><%= link_to article.title, article_path %></h4>
+    <p style="text-align: left;"><%= article.content %></p>
+ <% end %>
+ </div>

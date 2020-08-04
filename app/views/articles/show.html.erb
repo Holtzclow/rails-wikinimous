@@ -1,0 +1,7 @@
+<h1><%= @article.title %></h1> <p><%= link_to "✏", edit_path(@article)    %></p>
+  <div class="container pt-3 border">
+    <h4><%= @article.title %></h4>
+    <p><%= @article.content %></p>
+    </div>
+
+<%= link_to "Back to list", articles_path %>
